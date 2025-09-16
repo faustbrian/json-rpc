@@ -1,0 +1,39 @@
+{
+    "name": "cline/json-rpc",
+    "autoload": {
+        "psr-4": {
+            "Cline\\JsonRpc\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "brian@cline.sh"
+        }
+    ],
+    "require-dev": {
+        "cline/php-cs-fixer": "^1.0",
+        "pestphp/pest": "^4.1",
+        "orchestra/testbench": "^10.6",
+        "saloonphp/saloon": "^3.14",
+        "pestphp/pest-plugin-laravel": "^4.0"
+    },
+    "require": {
+        "illuminate/http": "^12.28",
+        "spatie/laravel-data": "^4.17",
+        "illuminate/validation": "^12.28",
+        "illuminate/support": "^12.28",
+        "cline/open-rpc": "^1.0",
+        "illuminate/bus": "^12.28"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
