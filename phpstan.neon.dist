@@ -1,0 +1,11 @@
+includes:
+    - phpstan-baseline.neon
+
+parameters:
+    level: max
+    paths:
+        - src
+
+    reportUnmatchedIgnoredErrors: true
+
+    memory_limit: 1G

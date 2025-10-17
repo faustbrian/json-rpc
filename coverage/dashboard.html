@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /usr/src/myapp/src</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="_css/bootstrap.min.css?v=11.0.11" rel="stylesheet" type="text/css">
+  <link href="_css/nv.d3.min.css?v=11.0.11" rel="stylesheet" type="text/css">
+  <link href="_css/style.css?v=11.0.11" rel="stylesheet" type="text/css">
+  <link href="_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.html">/usr/src/myapp/src</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Data/AbstractContentDescriptorData.php.html#26">Cline\JsonRpc\Data\AbstractContentDescriptorData</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exceptions/Actions/RendersThrowable.php.html#32">Cline\JsonRpc\Exceptions\Actions\RendersThrowable</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exceptions/Concerns/RendersThrowable.php.html#32">Cline\JsonRpc\Exceptions\Concerns\RendersThrowable</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Methods/Concerns/InteractsWithAuthentication.php.html#26">Cline\JsonRpc\Methods\Concerns\InteractsWithAuthentication</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Data/ErrorData.php.html#26">Cline\JsonRpc\Data\ErrorData</a></td><td class="text-right">4%</td></tr>
+       <tr><td><a href="Data/MethodErrorData.php.html#26">Cline\JsonRpc\Data\MethodErrorData</a></td><td class="text-right">16%</td></tr>
+       <tr><td><a href="Data/MethodResultData.php.html#26">Cline\JsonRpc\Data\MethodResultData</a></td><td class="text-right">16%</td></tr>
+       <tr><td><a href="Clients/Client.php.html#34">Cline\JsonRpc\Clients\Client</a></td><td class="text-right">26%</td></tr>
+       <tr><td><a href="Normalizers/ResourceNormalizer.php.html#29">Cline\JsonRpc\Normalizers\ResourceNormalizer</a></td><td class="text-right">30%</td></tr>
+       <tr><td><a href="Servers/ConfigurationServer.php.html#36">Cline\JsonRpc\Servers\ConfigurationServer</a></td><td class="text-right">48%</td></tr>
+       <tr><td><a href="Data/ResponseData.php.html#25">Cline\JsonRpc\Data\ResponseData</a></td><td class="text-right">53%</td></tr>
+       <tr><td><a href="Exceptions/AbstractRequestException.php.html#29">Cline\JsonRpc\Exceptions\AbstractRequestException</a></td><td class="text-right">55%</td></tr>
+       <tr><td><a href="Resources/AbstractResource.php.html#24">Cline\JsonRpc\Resources\AbstractResource</a></td><td class="text-right">55%</td></tr>
+       <tr><td><a href="ServiceProvider.php.html#37">Cline\JsonRpc\ServiceProvider</a></td><td class="text-right">65%</td></tr>
+       <tr><td><a href="QueryBuilders/QueryBuilder.php.html#36">Cline\JsonRpc\QueryBuilders\QueryBuilder</a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Repositories/ResourceRepository.php.html#30">Cline\JsonRpc\Repositories\ResourceRepository</a></td><td class="text-right">76%</td></tr>
+       <tr><td><a href="Requests/RequestHandler.php.html#55">Cline\JsonRpc\Requests\RequestHandler</a></td><td class="text-right">81%</td></tr>
+       <tr><td><a href="Resources/AbstractModelResource.php.html#33">Cline\JsonRpc\Resources\AbstractModelResource</a></td><td class="text-right">82%</td></tr>
+       <tr><td><a href="Http/Controllers/MethodController.php.html#35">Cline\JsonRpc\Http\Controllers\MethodController</a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="Jobs/CallMethod.php.html#45">Cline\JsonRpc\Jobs\CallMethod</a></td><td class="text-right">86%</td></tr>
+       <tr><td><a href="Exceptions/ForbiddenException.php.html#23">Cline\JsonRpc\Exceptions\ForbiddenException</a></td><td class="text-right">87%</td></tr>
+       <tr><td><a href="Exceptions/UnauthorizedException.php.html#24">Cline\JsonRpc\Exceptions\UnauthorizedException</a></td><td class="text-right">87%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Data/ErrorData.php.html#26">Cline\JsonRpc\Data\ErrorData</a></td><td class="text-right">209</td></tr>
+       <tr><td><a href="QueryBuilders/QueryBuilder.php.html#36">Cline\JsonRpc\QueryBuilders\QueryBuilder</a></td><td class="text-right">85</td></tr>
+       <tr><td><a href="Clients/Client.php.html#34">Cline\JsonRpc\Clients\Client</a></td><td class="text-right">40</td></tr>
+       <tr><td><a href="Exceptions/AbstractRequestException.php.html#29">Cline\JsonRpc\Exceptions\AbstractRequestException</a></td><td class="text-right">39</td></tr>
+       <tr><td><a href="Data/ResponseData.php.html#25">Cline\JsonRpc\Data\ResponseData</a></td><td class="text-right">37</td></tr>
+       <tr><td><a href="Servers/ConfigurationServer.php.html#36">Cline\JsonRpc\Servers\ConfigurationServer</a></td><td class="text-right">27</td></tr>
+       <tr><td><a href="Requests/RequestHandler.php.html#55">Cline\JsonRpc\Requests\RequestHandler</a></td><td class="text-right">18</td></tr>
+       <tr><td><a href="Jobs/CallMethod.php.html#45">Cline\JsonRpc\Jobs\CallMethod</a></td><td class="text-right">14</td></tr>
+       <tr><td><a href="Normalizers/ResourceNormalizer.php.html#29">Cline\JsonRpc\Normalizers\ResourceNormalizer</a></td><td class="text-right">13</td></tr>
+       <tr><td><a href="Resources/AbstractModelResource.php.html#33">Cline\JsonRpc\Resources\AbstractModelResource</a></td><td class="text-right">11</td></tr>
+       <tr><td><a href="ServiceProvider.php.html#37">Cline\JsonRpc\ServiceProvider</a></td><td class="text-right">10</td></tr>
+       <tr><td><a href="Exceptions/Actions/RendersThrowable.php.html#32">Cline\JsonRpc\Exceptions\Actions\RendersThrowable</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Exceptions/Concerns/RendersThrowable.php.html#32">Cline\JsonRpc\Exceptions\Concerns\RendersThrowable</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repositories/ResourceRepository.php.html#30">Cline\JsonRpc\Repositories\ResourceRepository</a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Http/Controllers/MethodController.php.html#35">Cline\JsonRpc\Http\Controllers\MethodController</a></td><td class="text-right">3</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Clients/Client.php.html#85"><abbr title="Cline\JsonRpc\Clients\Client::addMany">addMany</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Clients/Client.php.html#103"><abbr title="Cline\JsonRpc\Clients\Client::request">request</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Clients/Client.php.html#123"><abbr title="Cline\JsonRpc\Clients\Client::isBatch">isBatch</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Data/AbstractContentDescriptorData.php.html#37"><abbr title="Cline\JsonRpc\Data\AbstractContentDescriptorData::createContentDescriptor">createContentDescriptor</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Data/AbstractContentDescriptorData.php.html#50"><abbr title="Cline\JsonRpc\Data\AbstractContentDescriptorData::defaultContentDescriptors">defaultContentDescriptors</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Data/ErrorData.php.html#56"><abbr title="Cline\JsonRpc\Data\ErrorData::isClient">isClient</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Data/ErrorData.php.html#74"><abbr title="Cline\JsonRpc\Data\ErrorData::isServer">isServer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Data/ErrorData.php.html#101"><abbr title="Cline\JsonRpc\Data\ErrorData::toStatusCode">toStatusCode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Data/MethodErrorData.php.html#54"><abbr title="Cline\JsonRpc\Data\MethodErrorData::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Data/MethodResultData.php.html#55"><abbr title="Cline\JsonRpc\Data\MethodResultData::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Data/RequestObjectData.php.html#126"><abbr title="Cline\JsonRpc\Data\RequestObjectData::getParams">getParams</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Data/ResponseData.php.html#78"><abbr title="Cline\JsonRpc\Data\ResponseData::asNotification">asNotification</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Data/ResponseData.php.html#90"><abbr title="Cline\JsonRpc\Data\ResponseData::isSuccessful">isSuccessful</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Data/ResponseData.php.html#100"><abbr title="Cline\JsonRpc\Data\ResponseData::isFailed">isFailed</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Data/ResponseData.php.html#117"><abbr title="Cline\JsonRpc\Data\ResponseData::isClientError">isClientError</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Data/ResponseData.php.html#134"><abbr title="Cline\JsonRpc\Data\ResponseData::isServerError">isServerError</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Data/ResponseData.php.html#152"><abbr title="Cline\JsonRpc\Data\ResponseData::isNotification">isNotification</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exceptions/AbstractRequestException.php.html#90"><abbr title="Cline\JsonRpc\Exceptions\AbstractRequestException::getStatusCode">getStatusCode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exceptions/AbstractRequestException.php.html#107"><abbr title="Cline\JsonRpc\Exceptions\AbstractRequestException::getHeaders">getHeaders</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exceptions/Actions/RendersThrowable.php.html#46"><abbr title="Cline\JsonRpc\Exceptions\Actions\RendersThrowable::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exceptions/ForbiddenException.php.html#53"><abbr title="Cline\JsonRpc\Exceptions\ForbiddenException::getStatusCode">getStatusCode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exceptions/UnauthorizedException.php.html#52"><abbr title="Cline\JsonRpc\Exceptions\UnauthorizedException::getStatusCode">getStatusCode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Resources/AbstractModelResource.php.html#83"><abbr title="Cline\JsonRpc\Resources\AbstractModelResource::getModel">getModel</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Resources/AbstractResource.php.html#36"><abbr title="Cline\JsonRpc\Resources\AbstractResource::getFields">getFields</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Resources/AbstractResource.php.html#50"><abbr title="Cline\JsonRpc\Resources\AbstractResource::getFilters">getFilters</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Resources/AbstractResource.php.html#64"><abbr title="Cline\JsonRpc\Resources\AbstractResource::getRelationships">getRelationships</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Resources/AbstractResource.php.html#78"><abbr title="Cline\JsonRpc\Resources\AbstractResource::getSorts">getSorts</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Servers/ConfigurationServer.php.html#157"><abbr title="Cline\JsonRpc\Servers\ConfigurationServer::getContentDescriptors">getContentDescriptors</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Servers/ConfigurationServer.php.html#171"><abbr title="Cline\JsonRpc\Servers\ConfigurationServer::getSchemas">getSchemas</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exceptions/Concerns/RendersThrowable.php.html#42"><abbr title="Cline\JsonRpc\Exceptions\Concerns\RendersThrowable::renderableThrowable">renderableThrowable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Methods/Concerns/InteractsWithAuthentication.php.html#39"><abbr title="Cline\JsonRpc\Methods\Concerns\InteractsWithAuthentication::getCurrentUser">getCurrentUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ServiceProvider.php.html#97"><abbr title="Cline\JsonRpc\ServiceProvider::packageBooted">packageBooted</abbr></a></td><td class="text-right">27%</td></tr>
+       <tr><td><a href="Normalizers/ResourceNormalizer.php.html#41"><abbr title="Cline\JsonRpc\Normalizers\ResourceNormalizer::normalize">normalize</abbr></a></td><td class="text-right">30%</td></tr>
+       <tr><td><a href="QueryBuilders/QueryBuilder.php.html#364"><abbr title="Cline\JsonRpc\QueryBuilders\QueryBuilder::applyFilter">applyFilter</abbr></a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="Servers/ConfigurationServer.php.html#118"><abbr title="Cline\JsonRpc\Servers\ConfigurationServer::methods">methods</abbr></a></td><td class="text-right">36%</td></tr>
+       <tr><td><a href="Exceptions/AbstractRequestException.php.html#131"><abbr title="Cline\JsonRpc\Exceptions\AbstractRequestException::toArray">toArray</abbr></a></td><td class="text-right">43%</td></tr>
+       <tr><td><a href="QueryBuilders/QueryBuilder.php.html#285"><abbr title="Cline\JsonRpc\QueryBuilders\QueryBuilder::applyToQuery">applyToQuery</abbr></a></td><td class="text-right">65%</td></tr>
+       <tr><td><a href="Repositories/ResourceRepository.php.html#61"><abbr title="Cline\JsonRpc\Repositories\ResourceRepository::get">get</abbr></a></td><td class="text-right">70%</td></tr>
+       <tr><td><a href="Requests/RequestHandler.php.html#94"><abbr title="Cline\JsonRpc\Requests\RequestHandler::handle">handle</abbr></a></td><td class="text-right">73%</td></tr>
+       <tr><td><a href="Jobs/CallMethod.php.html#122"><abbr title="Cline\JsonRpc\Jobs\CallMethod::resolveParameters">resolveParameters</abbr></a></td><td class="text-right">73%</td></tr>
+       <tr><td><a href="Http/Controllers/MethodController.php.html#66"><abbr title="Cline\JsonRpc\Http\Controllers\MethodController::__invoke">__invoke</abbr></a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="Resources/AbstractModelResource.php.html#155"><abbr title="Cline\JsonRpc\Resources\AbstractModelResource::getAttributes">getAttributes</abbr></a></td><td class="text-right">85%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="QueryBuilders/QueryBuilder.php.html#364"><abbr title="Cline\JsonRpc\QueryBuilders\QueryBuilder::applyFilter">applyFilter</abbr></a></td><td class="text-right">91</td></tr>
+       <tr><td><a href="Data/ErrorData.php.html#101"><abbr title="Cline\JsonRpc\Data\ErrorData::toStatusCode">toStatusCode</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="Exceptions/AbstractRequestException.php.html#90"><abbr title="Cline\JsonRpc\Exceptions\AbstractRequestException::getStatusCode">getStatusCode</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="QueryBuilders/QueryBuilder.php.html#285"><abbr title="Cline\JsonRpc\QueryBuilders\QueryBuilder::applyToQuery">applyToQuery</abbr></a></td><td class="text-right">28</td></tr>
+       <tr><td><a href="Data/ErrorData.php.html#74"><abbr title="Cline\JsonRpc\Data\ErrorData::isServer">isServer</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="ServiceProvider.php.html#97"><abbr title="Cline\JsonRpc\ServiceProvider::packageBooted">packageBooted</abbr></a></td><td class="text-right">14</td></tr>
+       <tr><td><a href="Normalizers/ResourceNormalizer.php.html#41"><abbr title="Cline\JsonRpc\Normalizers\ResourceNormalizer::normalize">normalize</abbr></a></td><td class="text-right">13</td></tr>
+       <tr><td><a href="Clients/Client.php.html#103"><abbr title="Cline\JsonRpc\Clients\Client::request">request</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Data/ResponseData.php.html#152"><abbr title="Cline\JsonRpc\Data\ResponseData::isNotification">isNotification</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Requests/RequestHandler.php.html#94"><abbr title="Cline\JsonRpc\Requests\RequestHandler::handle">handle</abbr></a></td><td class="text-right">11</td></tr>
+       <tr><td><a href="Jobs/CallMethod.php.html#122"><abbr title="Cline\JsonRpc\Jobs\CallMethod::resolveParameters">resolveParameters</abbr></a></td><td class="text-right">11</td></tr>
+       <tr><td><a href="Clients/Client.php.html#85"><abbr title="Cline\JsonRpc\Clients\Client::addMany">addMany</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Data/ResponseData.php.html#100"><abbr title="Cline\JsonRpc\Data\ResponseData::isFailed">isFailed</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Data/ResponseData.php.html#117"><abbr title="Cline\JsonRpc\Data\ResponseData::isClientError">isClientError</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Data/ResponseData.php.html#134"><abbr title="Cline\JsonRpc\Data\ResponseData::isServerError">isServerError</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Exceptions/Actions/RendersThrowable.php.html#46"><abbr title="Cline\JsonRpc\Exceptions\Actions\RendersThrowable::execute">execute</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Exceptions/Concerns/RendersThrowable.php.html#42"><abbr title="Cline\JsonRpc\Exceptions\Concerns\RendersThrowable::renderableThrowable">renderableThrowable</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Servers/ConfigurationServer.php.html#118"><abbr title="Cline\JsonRpc\Servers\ConfigurationServer::methods">methods</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Http/Controllers/MethodController.php.html#66"><abbr title="Cline\JsonRpc\Http\Controllers\MethodController::__invoke">__invoke</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Resources/AbstractModelResource.php.html#155"><abbr title="Cline\JsonRpc\Resources\AbstractModelResource::getAttributes">getAttributes</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Exceptions/AbstractRequestException.php.html#131"><abbr title="Cline\JsonRpc\Exceptions\AbstractRequestException::toArray">toArray</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Repositories/ResourceRepository.php.html#61"><abbr title="Cline\JsonRpc\Repositories\ResourceRepository::get">get</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 11.0.11</a> using <a href="https://www.php.net/" target="_top">PHP 8.4.13</a> and <a href="https://phpunit.de/">PHPUnit 11.5.33</a> at Sat Oct 11 5:02:31 UTC 2025.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="_js/jquery.min.js?v=11.0.11" type="text/javascript"></script>
+  <script src="_js/d3.min.js?v=11.0.11" type="text/javascript"></script>
+  <script src="_js/nv.d3.min.js?v=11.0.11" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([4,1,2,1,1,1,3,1,2,6,3,49], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([31,0,0,1,3,1,0,1,3,2,2,158], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[26.666666666666668,9,"<a href=\"Clients\/Client.php.html#34\">Cline\\JsonRpc\\Clients\\Client<\/a>"],[0,2,"<a href=\"Data\/AbstractContentDescriptorData.php.html#26\">Cline\\JsonRpc\\Data\\AbstractContentDescriptorData<\/a>"],[100,6,"<a href=\"Data\/AbstractData.php.html#30\">Cline\\JsonRpc\\Data\\AbstractData<\/a>"],[100,1,"<a href=\"Data\/Configuration\/ConfigurationData.php.html#27\">Cline\\JsonRpc\\Data\\Configuration\\ConfigurationData<\/a>"],[100,1,"<a href=\"Data\/Configuration\/ServerData.php.html#24\">Cline\\JsonRpc\\Data\\Configuration\\ServerData<\/a>"],[100,1,"<a href=\"Data\/DocumentData.php.html#25\">Cline\\JsonRpc\\Data\\DocumentData<\/a>"],[4.761904761904762,15,"<a href=\"Data\/ErrorData.php.html#26\">Cline\\JsonRpc\\Data\\ErrorData<\/a>"],[100,1,"<a href=\"Data\/Errors\/ErrorObjectData.php.html#25\">Cline\\JsonRpc\\Data\\Errors\\ErrorObjectData<\/a>"],[100,1,"<a href=\"Data\/Errors\/LinksData.php.html#25\">Cline\\JsonRpc\\Data\\Errors\\LinksData<\/a>"],[100,1,"<a href=\"Data\/Errors\/SourceData.php.html#27\">Cline\\JsonRpc\\Data\\Errors\\SourceData<\/a>"],[100,1,"<a href=\"Data\/FilterData.php.html#21\">Cline\\JsonRpc\\Data\\FilterData<\/a>"],[16.666666666666664,2,"<a href=\"Data\/MethodErrorData.php.html#26\">Cline\\JsonRpc\\Data\\MethodErrorData<\/a>"],[16.666666666666664,2,"<a href=\"Data\/MethodResultData.php.html#26\">Cline\\JsonRpc\\Data\\MethodResultData<\/a>"],[100,1,"<a href=\"Data\/RequestData.php.html#24\">Cline\\JsonRpc\\Data\\RequestData<\/a>"],[94.44444444444444,7,"<a href=\"Data\/RequestObjectData.php.html#28\">Cline\\JsonRpc\\Data\\RequestObjectData<\/a>"],[100,1,"<a href=\"Data\/RequestResultData.php.html#22\">Cline\\JsonRpc\\Data\\RequestResultData<\/a>"],[100,1,"<a href=\"Data\/Requests\/FilterData.php.html#23\">Cline\\JsonRpc\\Data\\Requests\\FilterData<\/a>"],[100,1,"<a href=\"Data\/Requests\/ListRequestData.php.html#25\">Cline\\JsonRpc\\Data\\Requests\\ListRequestData<\/a>"],[100,1,"<a href=\"Data\/Requests\/SortData.php.html#23\">Cline\\JsonRpc\\Data\\Requests\\SortData<\/a>"],[100,1,"<a href=\"Data\/ResourceObjectData.php.html#21\">Cline\\JsonRpc\\Data\\ResourceObjectData<\/a>"],[53.333333333333336,15,"<a href=\"Data\/ResponseData.php.html#25\">Cline\\JsonRpc\\Data\\ResponseData<\/a>"],[55.00000000000001,16,"<a href=\"Exceptions\/AbstractRequestException.php.html#29\">Cline\\JsonRpc\\Exceptions\\AbstractRequestException<\/a>"],[0,2,"<a href=\"Exceptions\/Actions\/RendersThrowable.php.html#32\">Cline\\JsonRpc\\Exceptions\\Actions\\RendersThrowable<\/a>"],[100,9,"<a href=\"Exceptions\/ExceptionMapper.php.html#30\">Cline\\JsonRpc\\Exceptions\\ExceptionMapper<\/a>"],[87.5,2,"<a href=\"Exceptions\/ForbiddenException.php.html#23\">Cline\\JsonRpc\\Exceptions\\ForbiddenException<\/a>"],[100,1,"<a href=\"Exceptions\/InternalErrorException.php.html#23\">Cline\\JsonRpc\\Exceptions\\InternalErrorException<\/a>"],[100,3,"<a href=\"Exceptions\/InvalidDataException.php.html#24\">Cline\\JsonRpc\\Exceptions\\InvalidDataException<\/a>"],[100,1,"<a href=\"Exceptions\/InvalidFieldsException.php.html#26\">Cline\\JsonRpc\\Exceptions\\InvalidFieldsException<\/a>"],[100,1,"<a href=\"Exceptions\/InvalidFiltersException.php.html#26\">Cline\\JsonRpc\\Exceptions\\InvalidFiltersException<\/a>"],[100,1,"<a href=\"Exceptions\/InvalidParamsException.php.html#22\">Cline\\JsonRpc\\Exceptions\\InvalidParamsException<\/a>"],[94.44444444444444,2,"<a href=\"Exceptions\/InvalidRelationshipsException.php.html#26\">Cline\\JsonRpc\\Exceptions\\InvalidRelationshipsException<\/a>"],[100,4,"<a href=\"Exceptions\/InvalidRequestException.php.html#24\">Cline\\JsonRpc\\Exceptions\\InvalidRequestException<\/a>"],[100,1,"<a href=\"Exceptions\/InvalidSortsException.php.html#28\">Cline\\JsonRpc\\Exceptions\\InvalidSortsException<\/a>"],[100,1,"<a href=\"Exceptions\/JsonSchemaException.php.html#24\">Cline\\JsonRpc\\Exceptions\\JsonSchemaException<\/a>"],[100,1,"<a href=\"Exceptions\/MethodNotFoundException.php.html#22\">Cline\\JsonRpc\\Exceptions\\MethodNotFoundException<\/a>"],[100,1,"<a href=\"Exceptions\/ParseErrorException.php.html#21\">Cline\\JsonRpc\\Exceptions\\ParseErrorException<\/a>"],[100,2,"<a href=\"Exceptions\/ResourceNotFoundException.php.html#24\">Cline\\JsonRpc\\Exceptions\\ResourceNotFoundException<\/a>"],[100,1,"<a href=\"Exceptions\/ServerErrorException.php.html#22\">Cline\\JsonRpc\\Exceptions\\ServerErrorException<\/a>"],[100,1,"<a href=\"Exceptions\/ServerNotFoundException.php.html#22\">Cline\\JsonRpc\\Exceptions\\ServerNotFoundException<\/a>"],[100,2,"<a href=\"Exceptions\/ServiceUnavailableException.php.html#24\">Cline\\JsonRpc\\Exceptions\\ServiceUnavailableException<\/a>"],[100,2,"<a href=\"Exceptions\/TooManyRequestsException.php.html#24\">Cline\\JsonRpc\\Exceptions\\TooManyRequestsException<\/a>"],[87.5,2,"<a href=\"Exceptions\/UnauthorizedException.php.html#24\">Cline\\JsonRpc\\Exceptions\\UnauthorizedException<\/a>"],[100,5,"<a href=\"Exceptions\/UnprocessableEntityException.php.html#27\">Cline\\JsonRpc\\Exceptions\\UnprocessableEntityException<\/a>"],[100,1,"<a href=\"Facades\/Server.php.html#41\">Cline\\JsonRpc\\Facades\\Server<\/a>"],[83.33333333333334,3,"<a href=\"Http\/Controllers\/MethodController.php.html#35\">Cline\\JsonRpc\\Http\\Controllers\\MethodController<\/a>"],[100,4,"<a href=\"Http\/Middleware\/BootServer.php.html#34\">Cline\\JsonRpc\\Http\\Middleware\\BootServer<\/a>"],[100,3,"<a href=\"Http\/Middleware\/ForceJson.php.html#24\">Cline\\JsonRpc\\Http\\Middleware\\ForceJson<\/a>"],[86.66666666666667,14,"<a href=\"Jobs\/CallMethod.php.html#45\">Cline\\JsonRpc\\Jobs\\CallMethod<\/a>"],[99.57446808510639,98,"<a href=\"JsonSchema\/RuleTransformer.php.html#36\">Cline\\JsonRpc\\JsonSchema\\RuleTransformer<\/a>"],[100,8,"<a href=\"JsonSchema\/RulesTransformer.php.html#27\">Cline\\JsonRpc\\JsonSchema\\RulesTransformer<\/a>"],[100,2,"<a href=\"Methods\/AbstractListMethod.php.html#30\">Cline\\JsonRpc\\Methods\\AbstractListMethod<\/a>"],[100,6,"<a href=\"Methods\/AbstractMethod.php.html#33\">Cline\\JsonRpc\\Methods\\AbstractMethod<\/a>"],[100,17,"<a href=\"Methods\/DiscoverMethod.php.html#45\">Cline\\JsonRpc\\Methods\\DiscoverMethod<\/a>"],[100,2,"<a href=\"Mixins\/RouteMixin.php.html#32\">Cline\\JsonRpc\\Mixins\\RouteMixin<\/a>"],[100,6,"<a href=\"Normalizers\/ModelNormalizer.php.html#28\">Cline\\JsonRpc\\Normalizers\\ModelNormalizer<\/a>"],[30,5,"<a href=\"Normalizers\/ResourceNormalizer.php.html#29\">Cline\\JsonRpc\\Normalizers\\ResourceNormalizer<\/a>"],[75.24752475247524,49,"<a href=\"QueryBuilders\/QueryBuilder.php.html#36\">Cline\\JsonRpc\\QueryBuilders\\QueryBuilder<\/a>"],[100,6,"<a href=\"Repositories\/MethodRepository.php.html#30\">Cline\\JsonRpc\\Repositories\\MethodRepository<\/a>"],[76.92307692307693,5,"<a href=\"Repositories\/ResourceRepository.php.html#30\">Cline\\JsonRpc\\Repositories\\ResourceRepository<\/a>"],[100,8,"<a href=\"Repositories\/ServerRepository.php.html#29\">Cline\\JsonRpc\\Repositories\\ServerRepository<\/a>"],[81.81818181818183,17,"<a href=\"Requests\/RequestHandler.php.html#55\">Cline\\JsonRpc\\Requests\\RequestHandler<\/a>"],[100,5,"<a href=\"Resources\/AbstractDataResource.php.html#28\">Cline\\JsonRpc\\Resources\\AbstractDataResource<\/a>"],[82.14285714285714,11,"<a href=\"Resources\/AbstractModelResource.php.html#33\">Cline\\JsonRpc\\Resources\\AbstractModelResource<\/a>"],[55.55555555555556,5,"<a href=\"Resources\/AbstractResource.php.html#24\">Cline\\JsonRpc\\Resources\\AbstractResource<\/a>"],[100,4,"<a href=\"Rules\/Identifier.php.html#30\">Cline\\JsonRpc\\Rules\\Identifier<\/a>"],[100,9,"<a href=\"Servers\/AbstractServer.php.html#32\">Cline\\JsonRpc\\Servers\\AbstractServer<\/a>"],[48.148148148148145,11,"<a href=\"Servers\/ConfigurationServer.php.html#36\">Cline\\JsonRpc\\Servers\\ConfigurationServer<\/a>"],[65.21739130434783,8,"<a href=\"ServiceProvider.php.html#37\">Cline\\JsonRpc\\ServiceProvider<\/a>"],[100,16,"<a href=\"Transformers\/Transformer.php.html#37\">Cline\\JsonRpc\\Transformers\\Transformer<\/a>"],[100,1,"<a href=\"Validation\/Validator.php.html#26\">Cline\\JsonRpc\\Validation\\Validator<\/a>"],[0,2,"<a href=\"Exceptions\/Concerns\/RendersThrowable.php.html#32\">Cline\\JsonRpc\\Exceptions\\Concerns\\RendersThrowable<\/a>"],[0,1,"<a href=\"Methods\/Concerns\/InteractsWithAuthentication.php.html#26\">Cline\\JsonRpc\\Methods\\Concerns\\InteractsWithAuthentication<\/a>"],[100,1,"<a href=\"Methods\/Concerns\/InteractsWithQueryBuilder.php.html#27\">Cline\\JsonRpc\\Methods\\Concerns\\InteractsWithQueryBuilder<\/a>"],[100,5,"<a href=\"Methods\/Concerns\/InteractsWithTransformer.php.html#32\">Cline\\JsonRpc\\Methods\\Concerns\\InteractsWithTransformer<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"Clients\/Client.php.html#53\">Cline\\JsonRpc\\Clients\\Client::__construct<\/a>"],[100,1,"<a href=\"Clients\/Client.php.html#63\">Cline\\JsonRpc\\Clients\\Client::create<\/a>"],[100,1,"<a href=\"Clients\/Client.php.html#73\">Cline\\JsonRpc\\Clients\\Client::add<\/a>"],[0,2,"<a href=\"Clients\/Client.php.html#85\">Cline\\JsonRpc\\Clients\\Client::addMany<\/a>"],[0,3,"<a href=\"Clients\/Client.php.html#103\">Cline\\JsonRpc\\Clients\\Client::request<\/a>"],[0,1,"<a href=\"Clients\/Client.php.html#123\">Cline\\JsonRpc\\Clients\\Client::isBatch<\/a>"],[0,1,"<a href=\"Data\/AbstractContentDescriptorData.php.html#37\">Cline\\JsonRpc\\Data\\AbstractContentDescriptorData::createContentDescriptor<\/a>"],[0,1,"<a href=\"Data\/AbstractContentDescriptorData.php.html#50\">Cline\\JsonRpc\\Data\\AbstractContentDescriptorData::defaultContentDescriptors<\/a>"],[100,1,"<a href=\"Data\/AbstractData.php.html#41\">Cline\\JsonRpc\\Data\\AbstractData::toArray<\/a>"],[100,1,"<a href=\"Data\/AbstractData.php.html#55\">Cline\\JsonRpc\\Data\\AbstractData::jsonSerialize<\/a>"],[100,4,"<a href=\"Data\/AbstractData.php.html#74\">Cline\\JsonRpc\\Data\\AbstractData::removeNullValuesRecursively<\/a>"],[100,1,"<a href=\"Data\/Configuration\/ConfigurationData.php.html#52\">Cline\\JsonRpc\\Data\\Configuration\\ConfigurationData::__construct<\/a>"],[100,1,"<a href=\"Data\/Configuration\/ServerData.php.html#54\">Cline\\JsonRpc\\Data\\Configuration\\ServerData::__construct<\/a>"],[100,1,"<a href=\"Data\/DocumentData.php.html#45\">Cline\\JsonRpc\\Data\\DocumentData::__construct<\/a>"],[100,1,"<a href=\"Data\/ErrorData.php.html#41\">Cline\\JsonRpc\\Data\\ErrorData::__construct<\/a>"],[0,1,"<a href=\"Data\/ErrorData.php.html#56\">Cline\\JsonRpc\\Data\\ErrorData::isClient<\/a>"],[0,4,"<a href=\"Data\/ErrorData.php.html#74\">Cline\\JsonRpc\\Data\\ErrorData::isServer<\/a>"],[0,9,"<a href=\"Data\/ErrorData.php.html#101\">Cline\\JsonRpc\\Data\\ErrorData::toStatusCode<\/a>"],[100,1,"<a href=\"Data\/Errors\/ErrorObjectData.php.html#55\">Cline\\JsonRpc\\Data\\Errors\\ErrorObjectData::__construct<\/a>"],[100,1,"<a href=\"Data\/Errors\/LinksData.php.html#37\">Cline\\JsonRpc\\Data\\Errors\\LinksData::__construct<\/a>"],[100,1,"<a href=\"Data\/Errors\/SourceData.php.html#45\">Cline\\JsonRpc\\Data\\Errors\\SourceData::__construct<\/a>"],[100,1,"<a href=\"Data\/FilterData.php.html#37\">Cline\\JsonRpc\\Data\\FilterData::__construct<\/a>"],[100,1,"<a href=\"Data\/MethodErrorData.php.html#40\">Cline\\JsonRpc\\Data\\MethodErrorData::__construct<\/a>"],[0,1,"<a href=\"Data\/MethodErrorData.php.html#54\">Cline\\JsonRpc\\Data\\MethodErrorData::toArray<\/a>"],[100,1,"<a href=\"Data\/MethodResultData.php.html#41\">Cline\\JsonRpc\\Data\\MethodResultData::__construct<\/a>"],[0,1,"<a href=\"Data\/MethodResultData.php.html#55\">Cline\\JsonRpc\\Data\\MethodResultData::toArray<\/a>"],[100,1,"<a href=\"Data\/RequestData.php.html#39\">Cline\\JsonRpc\\Data\\RequestData::__construct<\/a>"],[100,1,"<a href=\"Data\/RequestObjectData.php.html#46\">Cline\\JsonRpc\\Data\\RequestObjectData::__construct<\/a>"],[100,1,"<a href=\"Data\/RequestObjectData.php.html#65\">Cline\\JsonRpc\\Data\\RequestObjectData::asRequest<\/a>"],[100,1,"<a href=\"Data\/RequestObjectData.php.html#87\">Cline\\JsonRpc\\Data\\RequestObjectData::asNotification<\/a>"],[100,2,"<a href=\"Data\/RequestObjectData.php.html#108\">Cline\\JsonRpc\\Data\\RequestObjectData::getParam<\/a>"],[0,1,"<a href=\"Data\/RequestObjectData.php.html#126\">Cline\\JsonRpc\\Data\\RequestObjectData::getParams<\/a>"],[100,1,"<a href=\"Data\/RequestObjectData.php.html#140\">Cline\\JsonRpc\\Data\\RequestObjectData::isNotification<\/a>"],[100,1,"<a href=\"Data\/RequestResultData.php.html#41\">Cline\\JsonRpc\\Data\\RequestResultData::__construct<\/a>"],[100,1,"<a href=\"Data\/Requests\/FilterData.php.html#42\">Cline\\JsonRpc\\Data\\Requests\\FilterData::__construct<\/a>"],[100,1,"<a href=\"Data\/Requests\/ListRequestData.php.html#49\">Cline\\JsonRpc\\Data\\Requests\\ListRequestData::__construct<\/a>"],[100,1,"<a href=\"Data\/Requests\/SortData.php.html#37\">Cline\\JsonRpc\\Data\\Requests\\SortData::__construct<\/a>"],[100,1,"<a href=\"Data\/ResourceObjectData.php.html#42\">Cline\\JsonRpc\\Data\\ResourceObjectData::__construct<\/a>"],[100,1,"<a href=\"Data\/ResponseData.php.html#43\">Cline\\JsonRpc\\Data\\ResponseData::__construct<\/a>"],[100,1,"<a href=\"Data\/ResponseData.php.html#61\">Cline\\JsonRpc\\Data\\ResponseData::createFromRequestException<\/a>"],[0,1,"<a href=\"Data\/ResponseData.php.html#78\">Cline\\JsonRpc\\Data\\ResponseData::asNotification<\/a>"],[0,1,"<a href=\"Data\/ResponseData.php.html#90\">Cline\\JsonRpc\\Data\\ResponseData::isSuccessful<\/a>"],[0,2,"<a href=\"Data\/ResponseData.php.html#100\">Cline\\JsonRpc\\Data\\ResponseData::isFailed<\/a>"],[0,2,"<a href=\"Data\/ResponseData.php.html#117\">Cline\\JsonRpc\\Data\\ResponseData::isClientError<\/a>"],[0,2,"<a href=\"Data\/ResponseData.php.html#134\">Cline\\JsonRpc\\Data\\ResponseData::isServerError<\/a>"],[0,3,"<a href=\"Data\/ResponseData.php.html#152\">Cline\\JsonRpc\\Data\\ResponseData::isNotification<\/a>"],[100,2,"<a href=\"Data\/ResponseData.php.html#167\">Cline\\JsonRpc\\Data\\ResponseData::toArray<\/a>"],[100,1,"<a href=\"Exceptions\/AbstractRequestException.php.html#38\">Cline\\JsonRpc\\Exceptions\\AbstractRequestException::__construct<\/a>"],[100,1,"<a href=\"Exceptions\/AbstractRequestException.php.html#52\">Cline\\JsonRpc\\Exceptions\\AbstractRequestException::getErrorCode<\/a>"],[100,1,"<a href=\"Exceptions\/AbstractRequestException.php.html#62\">Cline\\JsonRpc\\Exceptions\\AbstractRequestException::getErrorMessage<\/a>"],[100,1,"<a href=\"Exceptions\/AbstractRequestException.php.html#72\">Cline\\JsonRpc\\Exceptions\\AbstractRequestException::getErrorData<\/a>"],[0,7,"<a href=\"Exceptions\/AbstractRequestException.php.html#90\">Cline\\JsonRpc\\Exceptions\\AbstractRequestException::getStatusCode<\/a>"],[0,1,"<a href=\"Exceptions\/AbstractRequestException.php.html#107\">Cline\\JsonRpc\\Exceptions\\AbstractRequestException::getHeaders<\/a>"],[100,1,"<a href=\"Exceptions\/AbstractRequestException.php.html#117\">Cline\\JsonRpc\\Exceptions\\AbstractRequestException::toError<\/a>"],[43.75,2,"<a href=\"Exceptions\/AbstractRequestException.php.html#131\">Cline\\JsonRpc\\Exceptions\\AbstractRequestException::toArray<\/a>"],[100,1,"<a href=\"Exceptions\/AbstractRequestException.php.html#166\">Cline\\JsonRpc\\Exceptions\\AbstractRequestException::new<\/a>"],[0,2,"<a href=\"Exceptions\/Actions\/RendersThrowable.php.html#46\">Cline\\JsonRpc\\Exceptions\\Actions\\RendersThrowable::execute<\/a>"],[100,9,"<a href=\"Exceptions\/ExceptionMapper.php.html#48\">Cline\\JsonRpc\\Exceptions\\ExceptionMapper::execute<\/a>"],[100,1,"<a href=\"Exceptions\/ForbiddenException.php.html#37\">Cline\\JsonRpc\\Exceptions\\ForbiddenException::create<\/a>"],[0,1,"<a href=\"Exceptions\/ForbiddenException.php.html#53\">Cline\\JsonRpc\\Exceptions\\ForbiddenException::getStatusCode<\/a>"],[100,1,"<a href=\"Exceptions\/InternalErrorException.php.html#40\">Cline\\JsonRpc\\Exceptions\\InternalErrorException::create<\/a>"],[100,3,"<a href=\"Exceptions\/InvalidDataException.php.html#42\">Cline\\JsonRpc\\Exceptions\\InvalidDataException::create<\/a>"],[100,1,"<a href=\"Exceptions\/InvalidFieldsException.php.html#48\">Cline\\JsonRpc\\Exceptions\\InvalidFieldsException::create<\/a>"],[100,1,"<a href=\"Exceptions\/InvalidFiltersException.php.html#48\">Cline\\JsonRpc\\Exceptions\\InvalidFiltersException::create<\/a>"],[100,1,"<a href=\"Exceptions\/InvalidParamsException.php.html#40\">Cline\\JsonRpc\\Exceptions\\InvalidParamsException::create<\/a>"],[94.44444444444444,2,"<a href=\"Exceptions\/InvalidRelationshipsException.php.html#51\">Cline\\JsonRpc\\Exceptions\\InvalidRelationshipsException::create<\/a>"],[100,1,"<a href=\"Exceptions\/InvalidRequestException.php.html#42\">Cline\\JsonRpc\\Exceptions\\InvalidRequestException::create<\/a>"],[100,3,"<a href=\"Exceptions\/InvalidRequestException.php.html#64\">Cline\\JsonRpc\\Exceptions\\InvalidRequestException::createFromValidator<\/a>"],[100,1,"<a href=\"Exceptions\/InvalidSortsException.php.html#61\">Cline\\JsonRpc\\Exceptions\\InvalidSortsException::create<\/a>"],[100,1,"<a href=\"Exceptions\/JsonSchemaException.php.html#43\">Cline\\JsonRpc\\Exceptions\\JsonSchemaException::invalidRule<\/a>"],[100,1,"<a href=\"Exceptions\/MethodNotFoundException.php.html#42\">Cline\\JsonRpc\\Exceptions\\MethodNotFoundException::create<\/a>"],[100,1,"<a href=\"Exceptions\/ParseErrorException.php.html#32\">Cline\\JsonRpc\\Exceptions\\ParseErrorException::create<\/a>"],[100,1,"<a href=\"Exceptions\/ResourceNotFoundException.php.html#35\">Cline\\JsonRpc\\Exceptions\\ResourceNotFoundException::create<\/a>"],[100,1,"<a href=\"Exceptions\/ResourceNotFoundException.php.html#51\">Cline\\JsonRpc\\Exceptions\\ResourceNotFoundException::getStatusCode<\/a>"],[100,1,"<a href=\"Exceptions\/ServerErrorException.php.html#33\">Cline\\JsonRpc\\Exceptions\\ServerErrorException::create<\/a>"],[100,1,"<a href=\"Exceptions\/ServerNotFoundException.php.html#33\">Cline\\JsonRpc\\Exceptions\\ServerNotFoundException::create<\/a>"],[100,1,"<a href=\"Exceptions\/ServiceUnavailableException.php.html#36\">Cline\\JsonRpc\\Exceptions\\ServiceUnavailableException::create<\/a>"],[100,1,"<a href=\"Exceptions\/ServiceUnavailableException.php.html#52\">Cline\\JsonRpc\\Exceptions\\ServiceUnavailableException::getStatusCode<\/a>"],[100,1,"<a href=\"Exceptions\/TooManyRequestsException.php.html#36\">Cline\\JsonRpc\\Exceptions\\TooManyRequestsException::create<\/a>"],[100,1,"<a href=\"Exceptions\/TooManyRequestsException.php.html#52\">Cline\\JsonRpc\\Exceptions\\TooManyRequestsException::getStatusCode<\/a>"],[100,1,"<a href=\"Exceptions\/UnauthorizedException.php.html#36\">Cline\\JsonRpc\\Exceptions\\UnauthorizedException::create<\/a>"],[0,1,"<a href=\"Exceptions\/UnauthorizedException.php.html#52\">Cline\\JsonRpc\\Exceptions\\UnauthorizedException::getStatusCode<\/a>"],[100,1,"<a href=\"Exceptions\/UnprocessableEntityException.php.html#38\">Cline\\JsonRpc\\Exceptions\\UnprocessableEntityException::create<\/a>"],[100,3,"<a href=\"Exceptions\/UnprocessableEntityException.php.html#63\">Cline\\JsonRpc\\Exceptions\\UnprocessableEntityException::createFromValidationException<\/a>"],[100,1,"<a href=\"Exceptions\/UnprocessableEntityException.php.html#86\">Cline\\JsonRpc\\Exceptions\\UnprocessableEntityException::getStatusCode<\/a>"],[100,1,"<a href=\"Facades\/Server.php.html#48\">Cline\\JsonRpc\\Facades\\Server::getFacadeAccessor<\/a>"],[83.33333333333334,3,"<a href=\"Http\/Controllers\/MethodController.php.html#66\">Cline\\JsonRpc\\Http\\Controllers\\MethodController::__invoke<\/a>"],[100,1,"<a href=\"Http\/Middleware\/BootServer.php.html#46\">Cline\\JsonRpc\\Http\\Middleware\\BootServer::__construct<\/a>"],[100,1,"<a href=\"Http\/Middleware\/BootServer.php.html#64\">Cline\\JsonRpc\\Http\\Middleware\\BootServer::handle<\/a>"],[100,2,"<a href=\"Http\/Middleware\/BootServer.php.html#85\">Cline\\JsonRpc\\Http\\Middleware\\BootServer::terminate<\/a>"],[100,3,"<a href=\"Http\/Middleware\/ForceJson.php.html#37\">Cline\\JsonRpc\\Http\\Middleware\\ForceJson::handle<\/a>"],[100,1,"<a href=\"Jobs\/CallMethod.php.html#58\">Cline\\JsonRpc\\Jobs\\CallMethod::__construct<\/a>"],[100,3,"<a href=\"Jobs\/CallMethod.php.html#75\">Cline\\JsonRpc\\Jobs\\CallMethod::handle<\/a>"],[73.91304347826086,10,"<a href=\"Jobs\/CallMethod.php.html#122\">Cline\\JsonRpc\\Jobs\\CallMethod::resolveParameters<\/a>"],[99.57446808510639,98,"<a href=\"JsonSchema\/RuleTransformer.php.html#57\">Cline\\JsonRpc\\JsonSchema\\RuleTransformer::transform<\/a>"],[100,7,"<a href=\"JsonSchema\/RulesTransformer.php.html#48\">Cline\\JsonRpc\\JsonSchema\\RulesTransformer::transform<\/a>"],[100,1,"<a href=\"JsonSchema\/RulesTransformer.php.html#92\">Cline\\JsonRpc\\JsonSchema\\RulesTransformer::transformDataObject<\/a>"],[100,1,"<a href=\"Methods\/AbstractListMethod.php.html#40\">Cline\\JsonRpc\\Methods\\AbstractListMethod::handle<\/a>"],[100,1,"<a href=\"Methods\/AbstractListMethod.php.html#57\">Cline\\JsonRpc\\Methods\\AbstractListMethod::getParams<\/a>"],[100,0,"<a href=\"Methods\/AbstractListMethod.php.html#76\">Cline\\JsonRpc\\Methods\\AbstractListMethod::getResourceClass<\/a>"],[100,1,"<a href=\"Methods\/AbstractMethod.php.html#52\">Cline\\JsonRpc\\Methods\\AbstractMethod::getName<\/a>"],[100,1,"<a href=\"Methods\/AbstractMethod.php.html#66\">Cline\\JsonRpc\\Methods\\AbstractMethod::getSummary<\/a>"],[100,1,"<a href=\"Methods\/AbstractMethod.php.html#80\">Cline\\JsonRpc\\Methods\\AbstractMethod::getParams<\/a>"],[100,1,"<a href=\"Methods\/AbstractMethod.php.html#94\">Cline\\JsonRpc\\Methods\\AbstractMethod::getResult<\/a>"],[100,1,"<a href=\"Methods\/AbstractMethod.php.html#108\">Cline\\JsonRpc\\Methods\\AbstractMethod::getErrors<\/a>"],[100,1,"<a href=\"Methods\/AbstractMethod.php.html#122\">Cline\\JsonRpc\\Methods\\AbstractMethod::setRequest<\/a>"],[100,1,"<a href=\"Methods\/DiscoverMethod.php.html#52\">Cline\\JsonRpc\\Methods\\DiscoverMethod::getName<\/a>"],[100,1,"<a href=\"Methods\/DiscoverMethod.php.html#63\">Cline\\JsonRpc\\Methods\\DiscoverMethod::getSummary<\/a>"],[100,1,"<a href=\"Methods\/DiscoverMethod.php.html#77\">Cline\\JsonRpc\\Methods\\DiscoverMethod::getResult<\/a>"],[100,2,"<a href=\"Methods\/DiscoverMethod.php.html#98\">Cline\\JsonRpc\\Methods\\DiscoverMethod::handle<\/a>"],[100,11,"<a href=\"Methods\/DiscoverMethod.php.html#158\">Cline\\JsonRpc\\Methods\\DiscoverMethod::arr_filter_recursive<\/a>"],[100,1,"<a href=\"Methods\/DiscoverMethod.php.html#206\">Cline\\JsonRpc\\Methods\\DiscoverMethod::buildErrors<\/a>"],[100,2,"<a href=\"Mixins\/RouteMixin.php.html#48\">Cline\\JsonRpc\\Mixins\\RouteMixin::rpc<\/a>"],[100,6,"<a href=\"Normalizers\/ModelNormalizer.php.html#41\">Cline\\JsonRpc\\Normalizers\\ModelNormalizer::normalize<\/a>"],[30,5,"<a href=\"Normalizers\/ResourceNormalizer.php.html#41\">Cline\\JsonRpc\\Normalizers\\ResourceNormalizer::normalize<\/a>"],[100,1,"<a href=\"QueryBuilders\/QueryBuilder.php.html#108\">Cline\\JsonRpc\\QueryBuilders\\QueryBuilder::__construct<\/a>"],[100,2,"<a href=\"QueryBuilders\/QueryBuilder.php.html#142\">Cline\\JsonRpc\\QueryBuilders\\QueryBuilder::__call<\/a>"],[100,1,"<a href=\"QueryBuilders\/QueryBuilder.php.html#178\">Cline\\JsonRpc\\QueryBuilders\\QueryBuilder::for<\/a>"],[100,3,"<a href=\"QueryBuilders\/QueryBuilder.php.html#207\">Cline\\JsonRpc\\QueryBuilders\\QueryBuilder::collectFields<\/a>"],[100,3,"<a href=\"QueryBuilders\/QueryBuilder.php.html#225\">Cline\\JsonRpc\\QueryBuilders\\QueryBuilder::collectFilters<\/a>"],[100,3,"<a href=\"QueryBuilders\/QueryBuilder.php.html#244\">Cline\\JsonRpc\\QueryBuilders\\QueryBuilder::collectRelationships<\/a>"],[100,3,"<a href=\"QueryBuilders\/QueryBuilder.php.html#265\">Cline\\JsonRpc\\QueryBuilders\\QueryBuilder::collectSorts<\/a>"],[65.625,17,"<a href=\"QueryBuilders\/QueryBuilder.php.html#285\">Cline\\JsonRpc\\QueryBuilders\\QueryBuilder::applyToQuery<\/a>"],[33.33333333333333,16,"<a href=\"QueryBuilders\/QueryBuilder.php.html#364\">Cline\\JsonRpc\\QueryBuilders\\QueryBuilder::applyFilter<\/a>"],[100,2,"<a href=\"Repositories\/MethodRepository.php.html#44\">Cline\\JsonRpc\\Repositories\\MethodRepository::__construct<\/a>"],[100,1,"<a href=\"Repositories\/MethodRepository.php.html#56\">Cline\\JsonRpc\\Repositories\\MethodRepository::all<\/a>"],[100,1,"<a href=\"Repositories\/MethodRepository.php.html#70\">Cline\\JsonRpc\\Repositories\\MethodRepository::get<\/a>"],[100,2,"<a href=\"Repositories\/MethodRepository.php.html#89\">Cline\\JsonRpc\\Repositories\\MethodRepository::register<\/a>"],[100,1,"<a href=\"Repositories\/ResourceRepository.php.html#44\">Cline\\JsonRpc\\Repositories\\ResourceRepository::all<\/a>"],[70,2,"<a href=\"Repositories\/ResourceRepository.php.html#61\">Cline\\JsonRpc\\Repositories\\ResourceRepository::get<\/a>"],[100,1,"<a href=\"Repositories\/ResourceRepository.php.html#85\">Cline\\JsonRpc\\Repositories\\ResourceRepository::forget<\/a>"],[100,1,"<a href=\"Repositories\/ResourceRepository.php.html#96\">Cline\\JsonRpc\\Repositories\\ResourceRepository::register<\/a>"],[100,1,"<a href=\"Repositories\/ServerRepository.php.html#41\">Cline\\JsonRpc\\Repositories\\ServerRepository::__construct<\/a>"],[100,1,"<a href=\"Repositories\/ServerRepository.php.html#51\">Cline\\JsonRpc\\Repositories\\ServerRepository::all<\/a>"],[100,1,"<a href=\"Repositories\/ServerRepository.php.html#65\">Cline\\JsonRpc\\Repositories\\ServerRepository::findByName<\/a>"],[100,1,"<a href=\"Repositories\/ServerRepository.php.html#79\">Cline\\JsonRpc\\Repositories\\ServerRepository::findByPath<\/a>"],[100,2,"<a href=\"Repositories\/ServerRepository.php.html#92\">Cline\\JsonRpc\\Repositories\\ServerRepository::register<\/a>"],[100,2,"<a href=\"Repositories\/ServerRepository.php.html#111\">Cline\\JsonRpc\\Repositories\\ServerRepository::findBy<\/a>"],[100,1,"<a href=\"Requests\/RequestHandler.php.html#63\">Cline\\JsonRpc\\Requests\\RequestHandler::createFromArray<\/a>"],[100,1,"<a href=\"Requests\/RequestHandler.php.html#74\">Cline\\JsonRpc\\Requests\\RequestHandler::createFromString<\/a>"],[73.33333333333333,10,"<a href=\"Requests\/RequestHandler.php.html#94\">Cline\\JsonRpc\\Requests\\RequestHandler::handle<\/a>"],[100,4,"<a href=\"Requests\/RequestHandler.php.html#198\">Cline\\JsonRpc\\Requests\\RequestHandler::parse<\/a>"],[100,1,"<a href=\"Requests\/RequestHandler.php.html#236\">Cline\\JsonRpc\\Requests\\RequestHandler::validate<\/a>"],[100,1,"<a href=\"Resources\/AbstractDataResource.php.html#35\">Cline\\JsonRpc\\Resources\\AbstractDataResource::__construct<\/a>"],[100,1,"<a href=\"Resources\/AbstractDataResource.php.html#47\">Cline\\JsonRpc\\Resources\\AbstractDataResource::getType<\/a>"],[100,1,"<a href=\"Resources\/AbstractDataResource.php.html#58\">Cline\\JsonRpc\\Resources\\AbstractDataResource::getId<\/a>"],[100,1,"<a href=\"Resources\/AbstractDataResource.php.html#69\">Cline\\JsonRpc\\Resources\\AbstractDataResource::getAttributes<\/a>"],[100,1,"<a href=\"Resources\/AbstractDataResource.php.html#83\">Cline\\JsonRpc\\Resources\\AbstractDataResource::getRelations<\/a>"],[100,1,"<a href=\"Resources\/AbstractModelResource.php.html#43\">Cline\\JsonRpc\\Resources\\AbstractModelResource::__construct<\/a>"],[100,1,"<a href=\"Resources\/AbstractModelResource.php.html#59\">Cline\\JsonRpc\\Resources\\AbstractModelResource::query<\/a>"],[0,1,"<a href=\"Resources\/AbstractModelResource.php.html#83\">Cline\\JsonRpc\\Resources\\AbstractModelResource::getModel<\/a>"],[100,1,"<a href=\"Resources\/AbstractModelResource.php.html#99\">Cline\\JsonRpc\\Resources\\AbstractModelResource::getModelTable<\/a>"],[100,1,"<a href=\"Resources\/AbstractModelResource.php.html#112\">Cline\\JsonRpc\\Resources\\AbstractModelResource::getModelType<\/a>"],[100,1,"<a href=\"Resources\/AbstractModelResource.php.html#125\">Cline\\JsonRpc\\Resources\\AbstractModelResource::getType<\/a>"],[100,1,"<a href=\"Resources\/AbstractModelResource.php.html#139\">Cline\\JsonRpc\\Resources\\AbstractModelResource::getId<\/a>"],[85.71428571428571,3,"<a href=\"Resources\/AbstractModelResource.php.html#155\">Cline\\JsonRpc\\Resources\\AbstractModelResource::getAttributes<\/a>"],[100,1,"<a href=\"Resources\/AbstractModelResource.php.html#182\">Cline\\JsonRpc\\Resources\\AbstractModelResource::getRelations<\/a>"],[0,1,"<a href=\"Resources\/AbstractResource.php.html#36\">Cline\\JsonRpc\\Resources\\AbstractResource::getFields<\/a>"],[0,1,"<a href=\"Resources\/AbstractResource.php.html#50\">Cline\\JsonRpc\\Resources\\AbstractResource::getFilters<\/a>"],[0,1,"<a href=\"Resources\/AbstractResource.php.html#64\">Cline\\JsonRpc\\Resources\\AbstractResource::getRelationships<\/a>"],[0,1,"<a href=\"Resources\/AbstractResource.php.html#78\">Cline\\JsonRpc\\Resources\\AbstractResource::getSorts<\/a>"],[100,1,"<a href=\"Resources\/AbstractResource.php.html#92\">Cline\\JsonRpc\\Resources\\AbstractResource::toArray<\/a>"],[100,4,"<a href=\"Rules\/Identifier.php.html#43\">Cline\\JsonRpc\\Rules\\Identifier::validate<\/a>"],[100,1,"<a href=\"Servers\/AbstractServer.php.html#45\">Cline\\JsonRpc\\Servers\\AbstractServer::__construct<\/a>"],[100,1,"<a href=\"Servers\/AbstractServer.php.html#59\">Cline\\JsonRpc\\Servers\\AbstractServer::getName<\/a>"],[100,1,"<a href=\"Servers\/AbstractServer.php.html#73\">Cline\\JsonRpc\\Servers\\AbstractServer::getRoutePath<\/a>"],[100,1,"<a href=\"Servers\/AbstractServer.php.html#87\">Cline\\JsonRpc\\Servers\\AbstractServer::getRouteName<\/a>"],[100,1,"<a href=\"Servers\/AbstractServer.php.html#101\">Cline\\JsonRpc\\Servers\\AbstractServer::getVersion<\/a>"],[100,1,"<a href=\"Servers\/AbstractServer.php.html#116\">Cline\\JsonRpc\\Servers\\AbstractServer::getMiddleware<\/a>"],[100,1,"<a href=\"Servers\/AbstractServer.php.html#133\">Cline\\JsonRpc\\Servers\\AbstractServer::getMethodRepository<\/a>"],[100,1,"<a href=\"Servers\/AbstractServer.php.html#148\">Cline\\JsonRpc\\Servers\\AbstractServer::getContentDescriptors<\/a>"],[100,1,"<a href=\"Servers\/AbstractServer.php.html#165\">Cline\\JsonRpc\\Servers\\AbstractServer::getSchemas<\/a>"],[100,0,"<a href=\"Servers\/AbstractServer.php.html#181\">Cline\\JsonRpc\\Servers\\AbstractServer::methods<\/a>"],[100,1,"<a href=\"Servers\/ConfigurationServer.php.html#46\">Cline\\JsonRpc\\Servers\\ConfigurationServer::__construct<\/a>"],[100,1,"<a href=\"Servers\/ConfigurationServer.php.html#57\">Cline\\JsonRpc\\Servers\\ConfigurationServer::getName<\/a>"],[100,1,"<a href=\"Servers\/ConfigurationServer.php.html#68\">Cline\\JsonRpc\\Servers\\ConfigurationServer::getRoutePath<\/a>"],[100,1,"<a href=\"Servers\/ConfigurationServer.php.html#79\">Cline\\JsonRpc\\Servers\\ConfigurationServer::getRouteName<\/a>"],[100,1,"<a href=\"Servers\/ConfigurationServer.php.html#90\">Cline\\JsonRpc\\Servers\\ConfigurationServer::getVersion<\/a>"],[100,1,"<a href=\"Servers\/ConfigurationServer.php.html#101\">Cline\\JsonRpc\\Servers\\ConfigurationServer::getMiddleware<\/a>"],[36.84210526315789,3,"<a href=\"Servers\/ConfigurationServer.php.html#118\">Cline\\JsonRpc\\Servers\\ConfigurationServer::methods<\/a>"],[0,1,"<a href=\"Servers\/ConfigurationServer.php.html#157\">Cline\\JsonRpc\\Servers\\ConfigurationServer::getContentDescriptors<\/a>"],[0,1,"<a href=\"Servers\/ConfigurationServer.php.html#171\">Cline\\JsonRpc\\Servers\\ConfigurationServer::getSchemas<\/a>"],[100,1,"<a href=\"ServiceProvider.php.html#47\">Cline\\JsonRpc\\ServiceProvider::configurePackage<\/a>"],[100,1,"<a href=\"ServiceProvider.php.html#66\">Cline\\JsonRpc\\ServiceProvider::packageRegistered<\/a>"],[100,1,"<a href=\"ServiceProvider.php.html#79\">Cline\\JsonRpc\\ServiceProvider::bootingPackage<\/a>"],[27.27272727272727,5,"<a href=\"ServiceProvider.php.html#97\">Cline\\JsonRpc\\ServiceProvider::packageBooted<\/a>"],[100,1,"<a href=\"Transformers\/Transformer.php.html#47\">Cline\\JsonRpc\\Transformers\\Transformer::__construct<\/a>"],[100,1,"<a href=\"Transformers\/Transformer.php.html#60\">Cline\\JsonRpc\\Transformers\\Transformer::create<\/a>"],[100,2,"<a href=\"Transformers\/Transformer.php.html#75\">Cline\\JsonRpc\\Transformers\\Transformer::item<\/a>"],[100,2,"<a href=\"Transformers\/Transformer.php.html#97\">Cline\\JsonRpc\\Transformers\\Transformer::collection<\/a>"],[100,2,"<a href=\"Transformers\/Transformer.php.html#121\">Cline\\JsonRpc\\Transformers\\Transformer::cursorPaginate<\/a>"],[100,4,"<a href=\"Transformers\/Transformer.php.html#159\">Cline\\JsonRpc\\Transformers\\Transformer::paginate<\/a>"],[100,4,"<a href=\"Transformers\/Transformer.php.html#196\">Cline\\JsonRpc\\Transformers\\Transformer::simplePaginate<\/a>"],[100,1,"<a href=\"Validation\/Validator.php.html#40\">Cline\\JsonRpc\\Validation\\Validator::validate<\/a>"],[0,2,"<a href=\"Exceptions\/Concerns\/RendersThrowable.php.html#42\">Cline\\JsonRpc\\Exceptions\\Concerns\\RendersThrowable::renderableThrowable<\/a>"],[0,1,"<a href=\"Methods\/Concerns\/InteractsWithAuthentication.php.html#39\">Cline\\JsonRpc\\Methods\\Concerns\\InteractsWithAuthentication::getCurrentUser<\/a>"],[100,1,"<a href=\"Methods\/Concerns\/InteractsWithQueryBuilder.php.html#39\">Cline\\JsonRpc\\Methods\\Concerns\\InteractsWithQueryBuilder::query<\/a>"],[100,1,"<a href=\"Methods\/Concerns\/InteractsWithTransformer.php.html#44\">Cline\\JsonRpc\\Methods\\Concerns\\InteractsWithTransformer::item<\/a>"],[100,1,"<a href=\"Methods\/Concerns\/InteractsWithTransformer.php.html#58\">Cline\\JsonRpc\\Methods\\Concerns\\InteractsWithTransformer::collection<\/a>"],[100,1,"<a href=\"Methods\/Concerns\/InteractsWithTransformer.php.html#73\">Cline\\JsonRpc\\Methods\\Concerns\\InteractsWithTransformer::cursorPaginate<\/a>"],[100,1,"<a href=\"Methods\/Concerns\/InteractsWithTransformer.php.html#88\">Cline\\JsonRpc\\Methods\\Concerns\\InteractsWithTransformer::paginate<\/a>"],[100,1,"<a href=\"Methods\/Concerns\/InteractsWithTransformer.php.html#103\">Cline\\JsonRpc\\Methods\\Concerns\\InteractsWithTransformer::simplePaginate<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
