@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /usr/src/myapp/src/Exceptions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../_css/bootstrap.min.css?v=11.0.11" rel="stylesheet" type="text/css">
+  <link href="../_css/nv.d3.min.css?v=11.0.11" rel="stylesheet" type="text/css">
+  <link href="../_css/style.css?v=11.0.11" rel="stylesheet" type="text/css">
+  <link href="../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../index.html">/usr/src/myapp/src</a></li>
+         <li class="breadcrumb-item"><a href="index.html">Exceptions</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Actions/RendersThrowable.php.html#32">Cline\JsonRpc\Exceptions\Actions\RendersThrowable</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Concerns/RendersThrowable.php.html#32">Cline\JsonRpc\Exceptions\Concerns\RendersThrowable</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AbstractRequestException.php.html#29">Cline\JsonRpc\Exceptions\AbstractRequestException</a></td><td class="text-right">55%</td></tr>
+       <tr><td><a href="ForbiddenException.php.html#23">Cline\JsonRpc\Exceptions\ForbiddenException</a></td><td class="text-right">87%</td></tr>
+       <tr><td><a href="UnauthorizedException.php.html#24">Cline\JsonRpc\Exceptions\UnauthorizedException</a></td><td class="text-right">87%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="AbstractRequestException.php.html#29">Cline\JsonRpc\Exceptions\AbstractRequestException</a></td><td class="text-right">39</td></tr>
+       <tr><td><a href="Actions/RendersThrowable.php.html#32">Cline\JsonRpc\Exceptions\Actions\RendersThrowable</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Concerns/RendersThrowable.php.html#32">Cline\JsonRpc\Exceptions\Concerns\RendersThrowable</a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="AbstractRequestException.php.html#90"><abbr title="Cline\JsonRpc\Exceptions\AbstractRequestException::getStatusCode">getStatusCode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AbstractRequestException.php.html#107"><abbr title="Cline\JsonRpc\Exceptions\AbstractRequestException::getHeaders">getHeaders</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Actions/RendersThrowable.php.html#46"><abbr title="Cline\JsonRpc\Exceptions\Actions\RendersThrowable::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ForbiddenException.php.html#53"><abbr title="Cline\JsonRpc\Exceptions\ForbiddenException::getStatusCode">getStatusCode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UnauthorizedException.php.html#52"><abbr title="Cline\JsonRpc\Exceptions\UnauthorizedException::getStatusCode">getStatusCode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Concerns/RendersThrowable.php.html#42"><abbr title="Cline\JsonRpc\Exceptions\Concerns\RendersThrowable::renderableThrowable">renderableThrowable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AbstractRequestException.php.html#131"><abbr title="Cline\JsonRpc\Exceptions\AbstractRequestException::toArray">toArray</abbr></a></td><td class="text-right">43%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="AbstractRequestException.php.html#90"><abbr title="Cline\JsonRpc\Exceptions\AbstractRequestException::getStatusCode">getStatusCode</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Actions/RendersThrowable.php.html#46"><abbr title="Cline\JsonRpc\Exceptions\Actions\RendersThrowable::execute">execute</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Concerns/RendersThrowable.php.html#42"><abbr title="Cline\JsonRpc\Exceptions\Concerns\RendersThrowable::renderableThrowable">renderableThrowable</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="AbstractRequestException.php.html#131"><abbr title="Cline\JsonRpc\Exceptions\AbstractRequestException::toArray">toArray</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 11.0.11</a> using <a href="https://www.php.net/" target="_top">PHP 8.4.13</a> and <a href="https://phpunit.de/">PHPUnit 11.5.33</a> at Sat Oct 11 5:02:31 UTC 2025.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../_js/jquery.min.js?v=11.0.11" type="text/javascript"></script>
+  <script src="../_js/d3.min.js?v=11.0.11" type="text/javascript"></script>
+  <script src="../_js/nv.d3.min.js?v=11.0.11" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([2,0,0,0,0,0,1,0,0,2,1,17], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([6,0,0,0,0,1,0,0,0,0,1,31], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[55.00000000000001,16,"<a href=\"AbstractRequestException.php.html#29\">Cline\\JsonRpc\\Exceptions\\AbstractRequestException<\/a>"],[0,2,"<a href=\"Actions\/RendersThrowable.php.html#32\">Cline\\JsonRpc\\Exceptions\\Actions\\RendersThrowable<\/a>"],[100,9,"<a href=\"ExceptionMapper.php.html#30\">Cline\\JsonRpc\\Exceptions\\ExceptionMapper<\/a>"],[87.5,2,"<a href=\"ForbiddenException.php.html#23\">Cline\\JsonRpc\\Exceptions\\ForbiddenException<\/a>"],[100,1,"<a href=\"InternalErrorException.php.html#23\">Cline\\JsonRpc\\Exceptions\\InternalErrorException<\/a>"],[100,3,"<a href=\"InvalidDataException.php.html#24\">Cline\\JsonRpc\\Exceptions\\InvalidDataException<\/a>"],[100,1,"<a href=\"InvalidFieldsException.php.html#26\">Cline\\JsonRpc\\Exceptions\\InvalidFieldsException<\/a>"],[100,1,"<a href=\"InvalidFiltersException.php.html#26\">Cline\\JsonRpc\\Exceptions\\InvalidFiltersException<\/a>"],[100,1,"<a href=\"InvalidParamsException.php.html#22\">Cline\\JsonRpc\\Exceptions\\InvalidParamsException<\/a>"],[94.44444444444444,2,"<a href=\"InvalidRelationshipsException.php.html#26\">Cline\\JsonRpc\\Exceptions\\InvalidRelationshipsException<\/a>"],[100,4,"<a href=\"InvalidRequestException.php.html#24\">Cline\\JsonRpc\\Exceptions\\InvalidRequestException<\/a>"],[100,1,"<a href=\"InvalidSortsException.php.html#28\">Cline\\JsonRpc\\Exceptions\\InvalidSortsException<\/a>"],[100,1,"<a href=\"JsonSchemaException.php.html#24\">Cline\\JsonRpc\\Exceptions\\JsonSchemaException<\/a>"],[100,1,"<a href=\"MethodNotFoundException.php.html#22\">Cline\\JsonRpc\\Exceptions\\MethodNotFoundException<\/a>"],[100,1,"<a href=\"ParseErrorException.php.html#21\">Cline\\JsonRpc\\Exceptions\\ParseErrorException<\/a>"],[100,2,"<a href=\"ResourceNotFoundException.php.html#24\">Cline\\JsonRpc\\Exceptions\\ResourceNotFoundException<\/a>"],[100,1,"<a href=\"ServerErrorException.php.html#22\">Cline\\JsonRpc\\Exceptions\\ServerErrorException<\/a>"],[100,1,"<a href=\"ServerNotFoundException.php.html#22\">Cline\\JsonRpc\\Exceptions\\ServerNotFoundException<\/a>"],[100,2,"<a href=\"ServiceUnavailableException.php.html#24\">Cline\\JsonRpc\\Exceptions\\ServiceUnavailableException<\/a>"],[100,2,"<a href=\"TooManyRequestsException.php.html#24\">Cline\\JsonRpc\\Exceptions\\TooManyRequestsException<\/a>"],[87.5,2,"<a href=\"UnauthorizedException.php.html#24\">Cline\\JsonRpc\\Exceptions\\UnauthorizedException<\/a>"],[100,5,"<a href=\"UnprocessableEntityException.php.html#27\">Cline\\JsonRpc\\Exceptions\\UnprocessableEntityException<\/a>"],[0,2,"<a href=\"Concerns\/RendersThrowable.php.html#32\">Cline\\JsonRpc\\Exceptions\\Concerns\\RendersThrowable<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"AbstractRequestException.php.html#38\">Cline\\JsonRpc\\Exceptions\\AbstractRequestException::__construct<\/a>"],[100,1,"<a href=\"AbstractRequestException.php.html#52\">Cline\\JsonRpc\\Exceptions\\AbstractRequestException::getErrorCode<\/a>"],[100,1,"<a href=\"AbstractRequestException.php.html#62\">Cline\\JsonRpc\\Exceptions\\AbstractRequestException::getErrorMessage<\/a>"],[100,1,"<a href=\"AbstractRequestException.php.html#72\">Cline\\JsonRpc\\Exceptions\\AbstractRequestException::getErrorData<\/a>"],[0,7,"<a href=\"AbstractRequestException.php.html#90\">Cline\\JsonRpc\\Exceptions\\AbstractRequestException::getStatusCode<\/a>"],[0,1,"<a href=\"AbstractRequestException.php.html#107\">Cline\\JsonRpc\\Exceptions\\AbstractRequestException::getHeaders<\/a>"],[100,1,"<a href=\"AbstractRequestException.php.html#117\">Cline\\JsonRpc\\Exceptions\\AbstractRequestException::toError<\/a>"],[43.75,2,"<a href=\"AbstractRequestException.php.html#131\">Cline\\JsonRpc\\Exceptions\\AbstractRequestException::toArray<\/a>"],[100,1,"<a href=\"AbstractRequestException.php.html#166\">Cline\\JsonRpc\\Exceptions\\AbstractRequestException::new<\/a>"],[0,2,"<a href=\"Actions\/RendersThrowable.php.html#46\">Cline\\JsonRpc\\Exceptions\\Actions\\RendersThrowable::execute<\/a>"],[100,9,"<a href=\"ExceptionMapper.php.html#48\">Cline\\JsonRpc\\Exceptions\\ExceptionMapper::execute<\/a>"],[100,1,"<a href=\"ForbiddenException.php.html#37\">Cline\\JsonRpc\\Exceptions\\ForbiddenException::create<\/a>"],[0,1,"<a href=\"ForbiddenException.php.html#53\">Cline\\JsonRpc\\Exceptions\\ForbiddenException::getStatusCode<\/a>"],[100,1,"<a href=\"InternalErrorException.php.html#40\">Cline\\JsonRpc\\Exceptions\\InternalErrorException::create<\/a>"],[100,3,"<a href=\"InvalidDataException.php.html#42\">Cline\\JsonRpc\\Exceptions\\InvalidDataException::create<\/a>"],[100,1,"<a href=\"InvalidFieldsException.php.html#48\">Cline\\JsonRpc\\Exceptions\\InvalidFieldsException::create<\/a>"],[100,1,"<a href=\"InvalidFiltersException.php.html#48\">Cline\\JsonRpc\\Exceptions\\InvalidFiltersException::create<\/a>"],[100,1,"<a href=\"InvalidParamsException.php.html#40\">Cline\\JsonRpc\\Exceptions\\InvalidParamsException::create<\/a>"],[94.44444444444444,2,"<a href=\"InvalidRelationshipsException.php.html#51\">Cline\\JsonRpc\\Exceptions\\InvalidRelationshipsException::create<\/a>"],[100,1,"<a href=\"InvalidRequestException.php.html#42\">Cline\\JsonRpc\\Exceptions\\InvalidRequestException::create<\/a>"],[100,3,"<a href=\"InvalidRequestException.php.html#64\">Cline\\JsonRpc\\Exceptions\\InvalidRequestException::createFromValidator<\/a>"],[100,1,"<a href=\"InvalidSortsException.php.html#61\">Cline\\JsonRpc\\Exceptions\\InvalidSortsException::create<\/a>"],[100,1,"<a href=\"JsonSchemaException.php.html#43\">Cline\\JsonRpc\\Exceptions\\JsonSchemaException::invalidRule<\/a>"],[100,1,"<a href=\"MethodNotFoundException.php.html#42\">Cline\\JsonRpc\\Exceptions\\MethodNotFoundException::create<\/a>"],[100,1,"<a href=\"ParseErrorException.php.html#32\">Cline\\JsonRpc\\Exceptions\\ParseErrorException::create<\/a>"],[100,1,"<a href=\"ResourceNotFoundException.php.html#35\">Cline\\JsonRpc\\Exceptions\\ResourceNotFoundException::create<\/a>"],[100,1,"<a href=\"ResourceNotFoundException.php.html#51\">Cline\\JsonRpc\\Exceptions\\ResourceNotFoundException::getStatusCode<\/a>"],[100,1,"<a href=\"ServerErrorException.php.html#33\">Cline\\JsonRpc\\Exceptions\\ServerErrorException::create<\/a>"],[100,1,"<a href=\"ServerNotFoundException.php.html#33\">Cline\\JsonRpc\\Exceptions\\ServerNotFoundException::create<\/a>"],[100,1,"<a href=\"ServiceUnavailableException.php.html#36\">Cline\\JsonRpc\\Exceptions\\ServiceUnavailableException::create<\/a>"],[100,1,"<a href=\"ServiceUnavailableException.php.html#52\">Cline\\JsonRpc\\Exceptions\\ServiceUnavailableException::getStatusCode<\/a>"],[100,1,"<a href=\"TooManyRequestsException.php.html#36\">Cline\\JsonRpc\\Exceptions\\TooManyRequestsException::create<\/a>"],[100,1,"<a href=\"TooManyRequestsException.php.html#52\">Cline\\JsonRpc\\Exceptions\\TooManyRequestsException::getStatusCode<\/a>"],[100,1,"<a href=\"UnauthorizedException.php.html#36\">Cline\\JsonRpc\\Exceptions\\UnauthorizedException::create<\/a>"],[0,1,"<a href=\"UnauthorizedException.php.html#52\">Cline\\JsonRpc\\Exceptions\\UnauthorizedException::getStatusCode<\/a>"],[100,1,"<a href=\"UnprocessableEntityException.php.html#38\">Cline\\JsonRpc\\Exceptions\\UnprocessableEntityException::create<\/a>"],[100,3,"<a href=\"UnprocessableEntityException.php.html#63\">Cline\\JsonRpc\\Exceptions\\UnprocessableEntityException::createFromValidationException<\/a>"],[100,1,"<a href=\"UnprocessableEntityException.php.html#86\">Cline\\JsonRpc\\Exceptions\\UnprocessableEntityException::getStatusCode<\/a>"],[0,2,"<a href=\"Concerns\/RendersThrowable.php.html#42\">Cline\\JsonRpc\\Exceptions\\Concerns\\RendersThrowable::renderableThrowable<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

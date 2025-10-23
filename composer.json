@@ -1,0 +1,83 @@
+{
+    "name": "cline/rpc",
+    "description": "RPC implementation for PHP supporting JSON-RPC 2.0 and XML-RPC with OpenRPC specification support",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "rpc",
+        "json-rpc",
+        "xml-rpc",
+        "openrpc",
+        "api",
+        "laravel",
+        "json-rpc-2.0",
+        "xml-rpc-spec",
+        "rpc-server",
+        "specification"
+    ],
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "brian@cline.sh"
+        }
+    ],
+    "require": {
+        "php": "^8.4.0",
+        "cline/open-rpc": "^1.1.0",
+        "illuminate/bus": "^12.28",
+        "illuminate/http": "^12.28",
+        "illuminate/support": "^12.28",
+        "illuminate/validation": "^12.28",
+        "saloonphp/saloon": "^3.14",
+        "saloonphp/xml-wrangler": "^1.4",
+        "spatie/laravel-data": "^4.18.0",
+        "symfony/intl": "^7.3.4"
+    },
+    "require-dev": {
+        "cline/php-cs-fixer": "^1.0.4",
+        "driftingly/rector-laravel": "^2.1.0",
+        "ergebnis/composer-normalize": "^2.49@dev",
+        "laravel/pint": "^1.25.1",
+        "orchestra/testbench": "^10.6",
+        "pestphp/pest": "^3.8.4",
+        "pestphp/pest-plugin-laravel": "^3.2",
+        "pestphp/pest-plugin-type-coverage": "^3.6.1",
+        "phpstan/phpstan": "^2.1.31",
+        "rector/rector": "^2.2.4",
+        "symfony/var-dumper": "^7.3.4"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Cline\\RPC\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true,
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "lint": "vendor/bin/php-cs-fixer fix",
+        "refactor": "rector",
+        "test": [
+            "@test:lint",
+            "@test:type-coverage",
+            "@test:unit",
+            "@test:types",
+            "@test:refactor"
+        ],
+        "test:lint": "vendor/bin/php-cs-fixer check --diff",
+        "test:refactor": "rector --dry-run",
+        "test:type-coverage": "php -d memory_limit=1G vendor/bin/pest --parallel --exactly=100 --type-coverage",
+        "test:types": "phpstan",
+        "test:unit": "pest --parallel --exactly=100 --coverage"
+    }
+}
