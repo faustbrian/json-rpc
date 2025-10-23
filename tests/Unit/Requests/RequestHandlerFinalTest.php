@@ -38,6 +38,7 @@ describe('RequestHandler Complete Coverage', function (): void {
                 ],
                 'statusCode' => 200,
                 'headers' => [],
+                'encoded' => false,
             ]);
         });
 
@@ -61,6 +62,7 @@ describe('RequestHandler Complete Coverage', function (): void {
                 ],
                 'statusCode' => 200,
                 'headers' => [],
+                'encoded' => false,
             ]);
         });
     });

@@ -9,9 +9,11 @@
 
 namespace Cline\RPC\Http\Controllers;
 
+use Cline\RPC\Contracts\ProtocolInterface;
 use Cline\RPC\Requests\RequestHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response as HttpResponse;
 use Illuminate\Support\Facades\Response;
 use Spatie\LaravelData\Data;
 
@@ -34,42 +36,51 @@ use Spatie\LaravelData\Data;
 final readonly class MethodController
 {
     /**
-     * Handle the incoming JSON-RPC request.
+     * Handle the incoming RPC request.
      *
-     * Processes JSON-RPC requests by extracting the raw request body, passing it
+     * Processes RPC requests by extracting the raw request body, passing it
      * to the RequestHandler for parsing and method execution, and formatting the
-     * result as a JSON response. The method supports both single requests and
-     * batch requests as per JSON-RPC 2.0 specification.
+     * result according to the protocol (JSON-RPC, XML-RPC, etc.). The method
+     * supports both single requests and batch requests as per JSON-RPC 2.0 specification.
      *
      * HTTP Status Code Usage:
-     * - 200 OK: Standard response for successful JSON-RPC responses, even when
-     *   the JSON-RPC itself contains an error object. The HTTP protocol serves
+     * - 200 OK: Standard response for successful RPC responses, even when
+     *   the RPC itself contains an error object. The HTTP protocol serves
      *   as transport and doesn't reflect RPC-level success or failure.
      * - 400 Bad Request: Used when the HTTP request is malformed, such as when
-     *   the request body is not valid JSON.
+     *   the request body is not valid.
      * - 500 Internal Server Error: Used for server infrastructure failures that
-     *   are not related to the JSON-RPC protocol itself.
+     *   are not related to the RPC protocol itself.
      *
-     * @param  Request        $request        The incoming HTTP request containing the JSON-RPC
-     *                                        request payload in the body. The request content
-     *                                        should be valid JSON conforming to JSON-RPC 2.0.
-     * @param  RequestHandler $requestHandler The request handler that parses JSON-RPC
-     *                                        requests, routes them to appropriate
-     *                                        methods, and formats responses. Injected
-     *                                        via Laravel's service container.
-     * @return JsonResponse   The JSON-RPC response formatted as a Laravel JSON response.
-     *                        The response data type varies based on the handler result:
-     *                        Collection and Data objects are converted to arrays before
-     *                        serialization, while other types are returned as-is.
+     * @param  Request           $request        The incoming HTTP request containing the RPC
+     *                                           request payload in the body. The request content
+     *                                           should be valid according to the protocol.
+     * @param  RequestHandler    $requestHandler The request handler that parses RPC
+     *                                           requests, routes them to appropriate
+     *                                           methods, and formats responses. Injected
+     *                                           via Laravel's service container.
+     * @param  ProtocolInterface $protocol       The protocol for encoding responses. Injected
+     *                                           via Laravel's service container.
+     * @return HttpResponse|JsonResponse The RPC response formatted according to the protocol.
+     *                                   The response data type varies based on the handler result:
+     *                                   Collection and Data objects are converted to arrays before
+     *                                   serialization, while other types are returned as-is.
      */
-    public function __invoke(Request $request, RequestHandler $requestHandler): JsonResponse
+    public function __invoke(Request $request, RequestHandler $requestHandler, ProtocolInterface $protocol): HttpResponse|JsonResponse
     {
         $result = $requestHandler->handle($request->getContent());
 
-        if ($result->data instanceof Data) {
-            return Response::json($result->data->toArray(), $result->statusCode);
+        // Convert Data objects to arrays
+        $data = $result->data instanceof Data ? $result->data->toArray() : $result->data;
+
+        // If the response is already encoded (from unwrapped responses), return as-is
+        if ($result->encoded ?? false) {
+            return Response::make($data, $result->statusCode, [
+                'Content-Type' => $protocol->getContentType(),
+            ]);
         }
 
-        return Response::json($result->data, $result->statusCode);
+        // For standard responses, use protocol encoding
+        return Response::json($data, $result->statusCode);
     }
 }

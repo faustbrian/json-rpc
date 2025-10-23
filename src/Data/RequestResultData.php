@@ -37,10 +37,13 @@ final class RequestResultData extends AbstractData
      *                                          in the response. May contain content-type,
      *                                          cache control, CORS headers, or custom
      *                                          application-specific headers.
+     * @param bool                  $encoded    Whether the data is already protocol-encoded (true for
+     *                                          unwrapped responses that bypass standard protocol wrapping).
      */
     public function __construct(
         public readonly mixed $data,
         public readonly int $statusCode,
         public readonly array $headers = [],
+        public readonly bool $encoded = false,
     ) {}
 }

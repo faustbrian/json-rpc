@@ -26,6 +26,8 @@ use Cline\RPC\Facades\Server;
 use Cline\RPC\Jobs\CallMethod;
 use Cline\RPC\Protocols\JsonRpcProtocol;
 use Cline\RPC\Rules\Identifier;
+use DOMDocument;
+use DOMElement;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Support\Arr;
@@ -38,6 +40,7 @@ use function data_get;
 use function dispatch_sync;
 use function is_array;
 use function is_string;
+use function json_encode;
 use function throw_if;
 use function throw_unless;
 
@@ -167,8 +170,30 @@ final readonly class RequestHandler
                 ]);
             }
 
+            $singleResponse = $responses[0];
+
+            // Check if response is unwrapped (raw array instead of ResponseData)
+            // Unwrapped responses bypass the standard JSON-RPC envelope and are
+            // serialized directly (e.g., OpenRPC discovery returns the schema document itself)
+            if (is_array($singleResponse) && !($singleResponse instanceof ResponseData)) {
+                // Serialize the unwrapped response directly using the protocol
+                // For JSON: json_encode($singleResponse)
+                // For XML: convert array to XML structure
+                $encoded = match ($this->protocol->getContentType()) {
+                    'application/json' => \json_encode($singleResponse, \JSON_THROW_ON_ERROR | \JSON_PRETTY_PRINT),
+                    'text/xml' => $this->encodeArrayAsXml($singleResponse),
+                    default => \json_encode($singleResponse, \JSON_THROW_ON_ERROR),
+                };
+
+                return RequestResultData::from([
+                    'data' => $encoded,
+                    'statusCode' => 200,
+                    'encoded' => true,
+                ]);
+            }
+
             return RequestResultData::from([
-                'data' => $responses[0],
+                'data' => $singleResponse,
                 'statusCode' => 200,
             ]);
         } catch (Throwable $throwable) {
@@ -269,5 +294,63 @@ final readonly class RequestHandler
             'requestObjects' => $requestObjects,
             'isBatch' => true,
         ]);
+    }
+
+    /**
+     * Encode an array as XML for unwrapped responses.
+     *
+     * Converts a PHP array structure to XML format suitable for unwrapped responses
+     * like the OpenRPC discovery document. The root element name is derived from the
+     * first key if the array has one top-level element, otherwise defaults to 'response'.
+     *
+     * @param  array<string, mixed> $data Array data to encode as XML
+     * @return string               XML-encoded string
+     */
+    private function encodeArrayAsXml(array $data): string
+    {
+        $dom = new DOMDocument('1.0', 'UTF-8');
+        $dom->formatOutput = true;
+
+        // For OpenRPC documents, use 'openrpc' as root if it exists in the data
+        if (isset($data['openrpc'])) {
+            $root = $dom->createElement('openrpc-document');
+        } else {
+            $root = $dom->createElement('response');
+        }
+
+        $dom->appendChild($root);
+
+        $this->arrayToXml($data, $root, $dom);
+
+        return $dom->saveXML() ?: '';
+    }
+
+    /**
+     * Recursively convert array elements to XML nodes.
+     *
+     * @param mixed      $data Mixed data to convert
+     * @param DOMElement $node Parent XML node
+     * @param DOMDocument $dom  The DOM document
+     */
+    private function arrayToXml(mixed $data, DOMElement $node, DOMDocument $dom): void
+    {
+        if (is_array($data)) {
+            foreach ($data as $key => $value) {
+                if (is_int($key)) {
+                    $key = 'item';
+                }
+
+                $child = $dom->createElement((string) $key);
+                $node->appendChild($child);
+
+                if (is_array($value)) {
+                    $this->arrayToXml($value, $child, $dom);
+                } else {
+                    $child->appendChild($dom->createTextNode((string) $value));
+                }
+            }
+        } else {
+            $node->appendChild($dom->createTextNode((string) $data));
+        }
     }
 }
